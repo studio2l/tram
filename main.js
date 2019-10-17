@@ -8,7 +8,6 @@ if (process.platform !== "darwin") win.setSkipTaskbar (true)
 
 app.on('ready', async () => {
   trayMenu = new Tray(__dirname + '/src/tram.png')
-  console.log(menuInfo)
   const contextMenu = Menu.buildFromTemplate([
     {label:'menu1', type:'normal'},
     {type:'separator'},
