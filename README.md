@@ -25,7 +25,7 @@ $ npm install
 테스트를 위해 실행합니다.
 
 ```bash
-yarn start
+$ yarn start
 ```
 
 ## 배포
