@@ -1,0 +1,19 @@
+{
+  "name": "tram",
+  "version": "0.0.1",
+  "description": "A simple menu at tray",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": "https://github.com/studio2l/tram",
+  "keywords": [
+    "Electron",
+    "tray menu"
+  ],
+  "author": "GitHub",
+  "license": "BSD-3",
+  "devDependencies": {
+    "electron": "^6.0.10"
+  }
+}
