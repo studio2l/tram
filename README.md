@@ -1,52 +1,36 @@
 # tram
 
-설치 방법
-사용 방법
-추가 정보 입력 위치
-빌드 방법
+tram은 원하는 웹페이지, 폴더 경로 등으로 간편하게 이동하기 위해 tray menu를 생성하는 툴입니다.
 
-직접 작성은 짧게, 주요 내용은 링크
+## 설치
 
-**Clone and run for a quick way to see Electron in action.**
+tram는 node.js 10.16.3 버전을 사용하여 만들어지고 있습니다. `https://nodejs.org/` 에서 node.js를 설치하세요.
 
-This is a minimal Electron application based on the [Quick Start Guide](https://electronjs.org/docs/tutorial/quick-start) within the Electron documentation.
-
-**Use this app along with the [Electron API Demos](https://electronjs.org/#get-started) app for API code examples to help you get started.**
-
-A basic Electron application needs just these files:
-
-- `package.json` - Points to the app's main file and lists its details and dependencies.
-- `main.js` - Starts the app and creates a browser window to render HTML. This is the app's **main process**.
-- `index.html` - A web page to render. This is the app's **renderer process**.
-
-You can learn more about each of these components within the [Quick Start Guide](https://electronjs.org/docs/tutorial/quick-start).
-
-## To Use
-
-To clone and run this repository you'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) installed on your computer. From your command line:
+그 후 다음처럼 터미널 명령어를 이용하여 tram를 설치할 수 있습니다.
 
 ```bash
-# Clone this repository
-git clone https://github.com/electron/electron-quick-start
-# Go into the repository
-cd electron-quick-start
-# Install dependencies
-npm install
-# Run the app
-npm start
+$ git clone https://github.com/studio2l/tram
+$ cd tram
+$ npm install
 ```
 
-Note: If you're using Linux Bash for Windows, [see this guide](https://www.howtogeek.com/261575/how-to-run-graphical-linux-desktop-applications-from-windows-10s-bash-shell/) or use `node` from the command prompt.
+추가적으로 개발을 위해 필요한 프로그램을 설치합니다. 일반적으로 루트 권한이 필요합니다.
 
-## Resources for Learning Electron
+```bash
+# npm i -g yarn
+# npm i -g electron-builder
+```
 
-- [electronjs.org/docs](https://electronjs.org/docs) - all of Electron's documentation
-- [electronjs.org/community#boilerplates](https://electronjs.org/community#boilerplates) - sample starter apps created by the community
-- [electron/electron-quick-start](https://github.com/electron/electron-quick-start) - a very basic starter Electron app
-- [electron/simple-samples](https://github.com/electron/simple-samples) - small applications with ideas for taking them further
-- [electron/electron-api-demos](https://github.com/electron/electron-api-demos) - an Electron app that teaches you how to use Electron
-- [hokein/electron-sample-apps](https://github.com/hokein/electron-sample-apps) - small demo apps for the various Electron APIs
+## 실행
+테스트를 위해 실행합니다.
 
-## License
+```bash
+yarn start
+```
 
-[CC0 1.0 (Public Domain)](LICENSE.md)
+## 배포
+
+```bash
+$ yarn build
+```
+이렇게 하면 dist 폴더에 해당 OS에 대한 설치 파일이 생깁니다.
